@@ -105,6 +105,10 @@
       <Project>{D728C9B9-9C65-445B-8DCC-106F4FD2D847}</Project>
       <Name>PrismBotV2.Modules.Info</Name>
     </ProjectReference>
+    <ProjectReference Include="..\PrismBotV2.Core\PrismBotV2.Core.csproj">
+      <Project>{9c1e5054-3850-41e9-b655-c95c72b79a1b}</Project>
+      <Name>PrismBotV2.Core</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
