@@ -79,13 +79,7 @@
                 </StackPanel>
             </Grid>
 
-
-
         </GroupBox>
-
-
-
-
 
     </Grid>
 </UserControl>
