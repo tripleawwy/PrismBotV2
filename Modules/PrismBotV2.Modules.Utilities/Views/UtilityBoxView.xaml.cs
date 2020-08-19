@@ -18,9 +18,9 @@ namespace PrismBotV2.Modules.Utilities.Views
     /// <summary>
     /// Interaction logic for ViewA.xaml
     /// </summary>
-    public partial class ViewA : UserControl
+    public partial class UtilityBoxView : UserControl
     {
-        public ViewA()
+        public UtilityBoxView()
         {
             InitializeComponent();
         }

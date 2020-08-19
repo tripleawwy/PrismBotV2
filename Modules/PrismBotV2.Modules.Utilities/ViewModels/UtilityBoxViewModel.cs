@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace PrismBotV2.Modules.Utilities.ViewModels
 {
-    public class ViewAViewModel : BindableBase
+    public class UtilityBoxViewModel : BindableBase
     {
         private string _message;
         public string Message
@@ -17,7 +17,7 @@ namespace PrismBotV2.Modules.Utilities.ViewModels
             set { SetProperty(ref _message, value); }
         }
 
-        public ViewAViewModel()
+        public UtilityBoxViewModel()
         {
             Message = "View A from your Prism Module";
         }
