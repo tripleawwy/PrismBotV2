@@ -24,9 +24,6 @@ namespace PrismBotV2.Modules.Info.ViewModels
         {
             Message = "View A from your Prism Module";
             PersonList.Add(new Person { Age = 1, Name = "björn" });
-            PersonList.Add(new Person { Age = 1, Name = "björn" });
-            PersonList.Add(new Person { Age = 1, Name = "björn" });
-            PersonList.Add(new Person { Age = 14, Name = "robi" });
             PersonList.Add(new Person { Age = 14, Name = "robi" });
         }
     }
