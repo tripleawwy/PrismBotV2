@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MaterialDesignThemes.Wpf;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -18,7 +19,7 @@ namespace PrismBotV2.Modules.Utilities.Views
     /// <summary>
     /// Interaction logic for ViewA.xaml
     /// </summary>
-    public partial class UtilityBoxView : UserControl
+    public partial class UtilityBoxView : Card
     {
         public UtilityBoxView()
         {
