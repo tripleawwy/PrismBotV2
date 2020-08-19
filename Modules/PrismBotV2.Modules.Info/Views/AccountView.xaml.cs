@@ -18,9 +18,9 @@ namespace PrismBotV2.Modules.Info.Views
     /// <summary>
     /// Interaction logic for ViewA.xaml
     /// </summary>
-    public partial class ViewA : UserControl
+    public partial class AccountView : UserControl
     {
-        public ViewA()
+        public AccountView()
         {
             InitializeComponent();
         }
