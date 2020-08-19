@@ -16,7 +16,7 @@ namespace PrismBotV2.Modules.Bots
         }
         public void OnInitialized(IContainerProvider containerProvider)
         {
-            //regionManager.RegisterViewWithRegion(RegionNames.NavigationRegion, typeof(BotsItem));
+            regionManager.RegisterViewWithRegion(RegionNames.NavigationRegion, typeof(BotGroupView));
 
         }
 
