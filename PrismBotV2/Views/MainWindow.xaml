@@ -3,9 +3,33 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:prism="http://prismlibrary.com/"
         xmlns:core="clr-namespace:PrismBotV2.Core;assembly=PrismBotV2.Core"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
         prism:ViewModelLocator.AutoWireViewModel="True"
-        Title="{Binding Title}" Height="768" Width="1024" ResizeMode="CanMinimize">
+        Title="{Binding Title}" Height="600" Width="1024" ResizeMode="CanMinimize">
     <Grid>
-        <ContentControl prism:RegionManager.RegionName="{x:Static core:RegionNames.ContentRegion}" />
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="250"></ColumnDefinition>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+
+        <materialDesign:ColorZone Mode="PrimaryMid"
+                                  HorizontalAlignment="Stretch"
+                                  VerticalAlignment="Stretch"
+                                  CornerRadius="3"
+                                  materialDesign:ShadowAssist.ShadowDepth="Depth2"
+                                  Margin="2">
+            
+            <ItemsControl prism:RegionManager.RegionName="{x:Static core:RegionNames.NavigationRegion}"
+                      materialDesign:ColorZoneAssist.Background="AntiqueWhite"
+                      Grid.Column="0">
+            </ItemsControl>
+            
+        </materialDesign:ColorZone>
+
+        <ContentControl prism:RegionManager.RegionName="{x:Static core:RegionNames.ContentRegion}"
+                        Grid.Column="1"/>
+        
+
+
     </Grid>
 </Window>
