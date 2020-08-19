@@ -5,7 +5,9 @@
         xmlns:core="clr-namespace:PrismBotV2.Core;assembly=PrismBotV2.Core"
         xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
         prism:ViewModelLocator.AutoWireViewModel="True"
-        Title="{Binding Title}" Height="600" Width="1024" ResizeMode="CanMinimize">
+        Background="{DynamicResource MaterialDesignPaper}"
+        Title="{Binding Title}" Height="600" Width="1024">
+    
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="250"></ColumnDefinition>
@@ -13,6 +15,7 @@
         </Grid.ColumnDefinitions>
 
         <materialDesign:ColorZone Mode="PrimaryMid"
+                                  Grid.Column="0"
                                   HorizontalAlignment="Stretch"
                                   VerticalAlignment="Stretch"
                                   CornerRadius="3"
@@ -20,11 +23,9 @@
                                   Margin="2">
             
             <ScrollViewer Style="{StaticResource MaterialDesignScrollViewer}"
-                          VerticalScrollBarVisibility="Auto">
+                          VerticalScrollBarVisibility="Hidden">
                 
-                <ItemsControl prism:RegionManager.RegionName="{x:Static core:RegionNames.NavigationRegion}"
-                              materialDesign:ColorZoneAssist.Background="AntiqueWhite"
-                              Grid.Column="0">
+                <ItemsControl prism:RegionManager.RegionName="{x:Static core:RegionNames.NavigationRegion}">
                 </ItemsControl>
                 
             </ScrollViewer>
@@ -39,4 +40,5 @@
 
 
     </Grid>
+    
 </Window>
