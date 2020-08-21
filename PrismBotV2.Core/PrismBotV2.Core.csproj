@@ -50,6 +50,8 @@
   <ItemGroup>
     <Compile Include="DLLImports\Kernel32DLL.cs" />
     <Compile Include="DLLImports\User32DLL.cs" />
+    <Compile Include="MemoryHelper\MemoryReader.cs" />
+    <Compile Include="MemoryHelper\MemoryWriter.cs" />
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -73,8 +75,6 @@
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
     </None>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="MemoryHelper\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
