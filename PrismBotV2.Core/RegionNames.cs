@@ -12,5 +12,6 @@ namespace PrismBotV2.Core
         public static string MenuRegion = "MenuRegion";
         public static string StatusRegion = "StatusRegion";
         public static string NavigationRegion = "NavigationRegion";
+        public static string PlayerDashRegion = "PlayerDashRegion";
     }
 }
