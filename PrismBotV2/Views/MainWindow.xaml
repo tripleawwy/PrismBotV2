@@ -9,10 +9,12 @@
         Title="{Binding Title}" Height="600" Width="1024">
     
     <Grid>
+
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="250"></ColumnDefinition>
             <ColumnDefinition Width="*"></ColumnDefinition>
         </Grid.ColumnDefinitions>
+
 
         <materialDesign:ColorZone Mode="PrimaryMid"
                                   Grid.Column="0"
@@ -30,9 +32,30 @@
                 
             </ScrollViewer>
             
-
-            
         </materialDesign:ColorZone>
+
+        <Grid Grid.Column="1">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="2*"></RowDefinition>
+                <RowDefinition Height="*"></RowDefinition>
+            </Grid.RowDefinitions>
+
+            <materialDesign:ColorZone Mode="PrimaryMid"
+                                  Grid.Row="0"
+                                  HorizontalAlignment="Stretch"
+                                  VerticalAlignment="Stretch"
+                                  CornerRadius="3"
+                                  materialDesign:ShadowAssist.ShadowDepth="Depth3"
+                                  Margin="2">
+                <ScrollViewer Style="{StaticResource MaterialDesignScrollViewer}"
+                              VerticalScrollBarVisibility="Hidden">
+                    <ItemsControl prism:RegionManager.RegionName="{x:Static core:RegionNames.PlayerDashRegion}">
+                    </ItemsControl>
+                </ScrollViewer>
+
+            </materialDesign:ColorZone>
+
+        </Grid>
 
         <ContentControl prism:RegionManager.RegionName="{x:Static core:RegionNames.ContentRegion}"
                         Grid.Column="1"/>
