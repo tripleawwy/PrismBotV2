@@ -22,6 +22,7 @@
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
@@ -30,6 +31,7 @@
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -50,6 +52,7 @@
   <ItemGroup>
     <Compile Include="DLLImports\Kernel32DLL.cs" />
     <Compile Include="DLLImports\User32DLL.cs" />
+    <Compile Include="MemoryHelper\AddressesAndOffsets.cs" />
     <Compile Include="MemoryHelper\MemoryReader.cs" />
     <Compile Include="MemoryHelper\MemoryWriter.cs" />
     <Compile Include="Properties\AssemblyInfo.cs">
