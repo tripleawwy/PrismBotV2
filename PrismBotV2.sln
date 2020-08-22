@@ -15,6 +15,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PrismBotV2.Modules.Bots", "
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PrismBotV2.Modules.Utilities", "Modules\PrismBotV2.Modules.Utilities\PrismBotV2.Modules.Utilities.csproj", "{6BFD388C-AE23-4BD7-8098-EB7179442480}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PrismBotV2.Services", "PrismBotV2.Services\PrismBotV2.Services.csproj", "{51B30915-8A4B-4933-B606-AD9ADE1D43A6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PrismBotV2.Services.Interfaces", "PrismBotV2.Services.Interfaces\PrismBotV2.Services.Interfaces.csproj", "{21631FFD-8E24-49D2-B66C-BF9493EE5468}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -41,6 +45,14 @@ Global
 		{6BFD388C-AE23-4BD7-8098-EB7179442480}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6BFD388C-AE23-4BD7-8098-EB7179442480}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6BFD388C-AE23-4BD7-8098-EB7179442480}.Release|Any CPU.Build.0 = Release|Any CPU
+		{51B30915-8A4B-4933-B606-AD9ADE1D43A6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{51B30915-8A4B-4933-B606-AD9ADE1D43A6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{51B30915-8A4B-4933-B606-AD9ADE1D43A6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{51B30915-8A4B-4933-B606-AD9ADE1D43A6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{21631FFD-8E24-49D2-B66C-BF9493EE5468}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{21631FFD-8E24-49D2-B66C-BF9493EE5468}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{21631FFD-8E24-49D2-B66C-BF9493EE5468}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{21631FFD-8E24-49D2-B66C-BF9493EE5468}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

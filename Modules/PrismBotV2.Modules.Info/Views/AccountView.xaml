@@ -5,7 +5,7 @@
             xmlns:test="clr-namespace:PrismBotV2.Modules.Info.ViewModels"
             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
-            Header="Accounts"
+            Header="{Binding Player.Name}"
             Style="{DynamicResource MaterialDesignCardGroupBox}"
             materialDesign:ColorZoneAssist.Mode="PrimaryDark"
             Margin="14"            
@@ -13,7 +13,7 @@
             xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
             d:DesignHeight="240.246" d:DesignWidth="311.704"
             xmlns:prism="http://prismlibrary.com/"
-            prism:ViewModelLocator.AutoWireViewModel="True">
+            prism:ViewModelLocator.AutoWireViewModel="True" HorizontalAlignment="Left" VerticalAlignment="Top">
 
     <GroupBox.HeaderTemplate>
         <DataTemplate>
@@ -38,7 +38,7 @@
         </DataTemplate>
     </GroupBox.HeaderTemplate>
 
-    <ItemsControl ItemsSource="{Binding PersonList}"
+    <!--<ItemsControl ItemsSource="{Binding PersonList}"
               HorizontalAlignment="Stretch"
               VerticalAlignment="Stretch"
               Grid.Row="0">
@@ -53,6 +53,6 @@
                 </Button>
             </DataTemplate>
         </ItemsControl.ItemTemplate>
-    </ItemsControl>
+    </ItemsControl>-->
 
 </GroupBox>

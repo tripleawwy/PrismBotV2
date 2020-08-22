@@ -16,7 +16,7 @@ namespace PrismBotV2.Modules.Info
         }
         public void OnInitialized(IContainerProvider containerProvider)
         {
-            regionManager.RegisterViewWithRegion(RegionNames.NavigationRegion, typeof(AccountView));
+            regionManager.RegisterViewWithRegion(RegionNames.PlayerDashRegion, typeof(AccountView));
  
         }
 
