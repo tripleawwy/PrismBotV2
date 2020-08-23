@@ -50,8 +50,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="InfoModule.cs" />
+    <Compile Include="Models\IProcessMonitor.cs" />
     <Compile Include="Models\Player.cs" />
-    <Compile Include="Models\PlayerFinder.cs" />
+    <Compile Include="Models\ProcessMonitor.cs" />
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
     </Compile>

@@ -19,7 +19,7 @@ namespace PrismBotV2.Modules.Info.Views
     /// <summary>
     /// Interaction logic for ViewA.xaml
     /// </summary>
-    public partial class AccountView : GroupBox
+    public partial class AccountView : DockPanel
     {
         public AccountView()
         {
