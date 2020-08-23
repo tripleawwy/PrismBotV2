@@ -1,4 +1,5 @@
 ﻿using PrismBotV2.Core.MemoryHelper;
+using PrismBotV2.Services.Interfaces;
 using System;
 using System.Collections.Generic;
 using System.Diagnostics;
@@ -10,7 +11,7 @@ using System.Threading.Tasks;
 using static PrismBotV2.Core.DLLImports.Kernel32DLL;
 using static PrismBotV2.Core.DLLImports.Kernel32DLL.ProcessAccessFlags;
 
-namespace PrismBotV2.Modules.Info.Models
+namespace PrismBotV2.Services
 {
     public class ProcessMonitor : IProcessMonitor
     {
@@ -49,9 +50,9 @@ namespace PrismBotV2.Modules.Info.Models
             }
         }
 
-        public IList<Process> FindKalClients()
+        public IDictionary<int, Process> FindKalClients()
         {
-            return kalClients.Values.ToList();
+            return kalClients;
         }
 
         private static void PrepareClient(Process client)

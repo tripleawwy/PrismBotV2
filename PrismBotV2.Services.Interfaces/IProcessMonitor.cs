@@ -1,11 +1,10 @@
 ﻿using System.Collections.Generic;
 using System.Diagnostics;
-using System.Windows.Documents;
 
-namespace PrismBotV2.Modules.Info.Models
+namespace PrismBotV2.Services.Interfaces
 {
     public interface IProcessMonitor
     {
-        IList<Process> FindKalClients();
+        IDictionary<int, Process> FindKalClients();
     }
 }

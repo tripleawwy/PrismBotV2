@@ -5,7 +5,7 @@
             xmlns:test="clr-namespace:PrismBotV2.Modules.Info.ViewModels"
             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
-            Margin="14"            
+           Margin="10"
             mc:Ignorable="d" 
             xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
             d:DesignHeight="240.246" d:DesignWidth="311.704"

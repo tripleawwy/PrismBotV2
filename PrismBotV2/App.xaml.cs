@@ -5,6 +5,8 @@ using System.Windows;
 using PrismBotV2.Modules.Info;
 using PrismBotV2.Modules.Bots;
 using PrismBotV2.Modules.Utilities;
+using PrismBotV2.Services;
+using PrismBotV2.Services.Interfaces;
 
 namespace PrismBotV2
 {
@@ -20,7 +22,7 @@ namespace PrismBotV2
 
         protected override void RegisterTypes(IContainerRegistry containerRegistry)
         {
-
+            containerRegistry.RegisterSingleton<IProcessMonitor, ProcessMonitor>();
         }
 
         protected override void ConfigureModuleCatalog(IModuleCatalog moduleCatalog)

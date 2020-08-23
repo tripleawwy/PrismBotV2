@@ -120,6 +120,14 @@
       <Project>{9c1e5054-3850-41e9-b655-c95c72b79a1b}</Project>
       <Name>PrismBotV2.Core</Name>
     </ProjectReference>
+    <ProjectReference Include="..\PrismBotV2.Services.Interfaces\PrismBotV2.Services.Interfaces.csproj">
+      <Project>{21631FFD-8E24-49D2-B66C-BF9493EE5468}</Project>
+      <Name>PrismBotV2.Services.Interfaces</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\PrismBotV2.Services\PrismBotV2.Services.csproj">
+      <Project>{51B30915-8A4B-4933-B606-AD9ADE1D43A6}</Project>
+      <Name>PrismBotV2.Services</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

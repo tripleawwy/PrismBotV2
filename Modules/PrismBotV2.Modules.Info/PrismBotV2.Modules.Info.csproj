@@ -50,9 +50,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="InfoModule.cs" />
-    <Compile Include="Models\IProcessMonitor.cs" />
     <Compile Include="Models\Player.cs" />
-    <Compile Include="Models\ProcessMonitor.cs" />
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -84,6 +82,10 @@
     <ProjectReference Include="..\..\PrismBotV2.Core\PrismBotV2.Core.csproj">
       <Project>{9C1E5054-3850-41E9-B655-C95C72B79A1B}</Project>
       <Name>PrismBotV2.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\PrismBotV2.Services.Interfaces\PrismBotV2.Services.Interfaces.csproj">
+      <Project>{21631FFD-8E24-49D2-B66C-BF9493EE5468}</Project>
+      <Name>PrismBotV2.Services.Interfaces</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
